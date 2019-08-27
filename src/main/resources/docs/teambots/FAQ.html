@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>
+TeamBots FAQ
+</title>
+</head>
+<body BGCOLOR="#FFFFFF">
+
+<FONT FACE="ariel,helvetica">
+
+<H2>TeamBots<SUP><FONT SIZE=-3>TM</FONT></SUP> FAQ</H2>
+
+We compile these questions as people ask them.
+Send <A HREF="mailto:trb@cs.cmu.edu">e-mail</A> if you
+have another question.
+
+<P>
+
+<OL>
+	<LI> <B>What is TeamBots?</B>
+		<P>
+		TeamBots is a system for developing and 
+		running multi-robot control systems on mobile robots and in
+		simulation. TeamBots is freely distributable, 
+		but it is copyrighted by the Georgia Tech Research
+		Corporation.
+		TeamBots was developed at Georgia Tech's 
+		Intelligent Systems and Robotics Group by Tucker Balch,
+		Juan Carlos Santamaría and David Huggins. 
+	<P>
+	<LI> <B>How do I get the TeamBots distribution?</B>
+		<P>
+		Download it from 
+		<A HREF="http://www.cs.cmu.edu/~trb/TeamBots">
+		http://www.cs.cmu.edu/~trb/TeamBots</A>
+	<P>
+	<LI> <B>How do I install TeamBots?</B>
+		<P>
+		Instructions are on the main page: 
+		<A HREF="http://www.cs.cmu.edu/~trb/TeamBots">
+		http://www.cs.cmu.edu/~trb/TeamBots</A>
+	<P>
+	<LI> <B>What software do I need to install and run TeamBots?</B>
+		<P>
+		Unzip and Java 1.2 or newer.  You need gmake if you 
+		want to (elegantly) revise and recompile.
+	<P>
+	<LI> <B>Where can I find the meaning and arguments to the keywords 
+		used in the dsc-files?</B>
+		<P>
+		Probably the best source is the example file in 
+		<A HREF="../Domains/Forage/forage.dsc">Forage/forage.dsc</A>.
+		It is fairly well documented.
+	<P>
+	<LI> <B>What happens after the dsc-file is read? 
+		How is the machinery started? In which order are
+		takeStep() methods called. When is draw called?</B>
+		<P>
+		<OL>
+		<LI> Each robot's control system takeStep() method is called.
+		<LI> Each physical object in the simulation's 
+			takeStep() method is called.
+		<LI> Each object in the simulation's draw() method is called.
+		</OL>
+		<P>
+		Robots have two components, the physical part and 
+		the control system part.  Both have takeStep() methods 
+		that are called on every cycle.
+	<P>
+	<LI> <B> I want to make multiple simulation runs without 
+		intervention. How can I restart the simulation and
+		save results?</B>
+		<P>
+		Use the "timeout" and "trials" keywords in the 
+		description file.  "timeout 10000" for example, will
+		run the simulation for 10 seconds, then terminate 
+		the simulation.  If you also add a "trials 100" statement,
+		then your simulation will run 10 seconds 100 times.
+		Note that the trialEnd(), trialInit() and quit() methods
+		of your control system will be called at the appropriate
+		times.  This allows you to log data and open and close
+		files as the need arises. quit() is only called once at
+		the end of the simulation.
+		<P>
+		You may also want to run your simulation using 
+		TBSimNoGraphics instead of TBSim.  This
+		program runs about 10 times as fast but with no graphics.
+	<P>
+	<LI> <B>Can I run TBSim without the graphics?</B>
+		<P>
+		Yes.  Use the TBSimNoGraphics application instead
+		of TBSim.  The program runs about 10 times
+		as fast.  The command line is 
+		<PRE>java TBSimNoGraphics description_file</PRE>
+	<P>
+	<LI> <B>Can TBSim be
+		run as an applet (i.e., from a web browser), if 
+		only for a demonstration?</B>
+		<P>
+		Maybe.  There is a working version of TMSim designed
+		to run as an applet (TBSimApplet). 
+		The reason for the uncertainty is that
+		TeamBots requires Java 1.2 support and under Linux
+		(where TeamBots is developed), Netscape does not seem
+		to fully support the 1.2 AWT, so it can't be tested.
+		<P>
+		Testing and debugging this feature is
+		definitely on the ``to do'' list for the
+		next release.
+	<P>
+	<LI> <B>Isn't Java really slow?  How can you use it for
+		real time control?</B>
+		<P>
+		Some researchers are concerned that Java is too 
+		slow to support real time robot control. 
+		Our experience contradicts this conclusion. 
+		As an example, in simulation (without graphics) 
+		our Java coded behavior-based control systems 
+		run at up to 30 KHz rates on conventional 200 MHz 
+		Pentium machines. 
+		<P>
+		The primary bottleneck to runtime efficiency on 
+		real robots is sensor and control I/O. On Nomad 
+		150 robots for instance, we are limited to 10Hz 
+		control rates because this is the maximum rate 
+		control commands can be transmitted to the 
+		robot (control programs written in C cannot 
+		run any faster). 
+		<P>
+		The benefits of Java (portability, correctness, ease 
+		of use, rapid development) far outweigh the 
+		negligible runtime overhead. 
+		<P>
+		Finally, Java compilers that offer runtime speeds
+		as fast as C++ are already available (take a look
+		at the compiler by 
+		<A HREF="http://www.towerj.com">Tower</A>
+		for instance).
+</OL>

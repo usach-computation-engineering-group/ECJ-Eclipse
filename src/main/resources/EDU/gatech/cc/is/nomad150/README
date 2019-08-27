@@ -1,0 +1,28 @@
+Nomad 150 example README
+
+Nomadic Technologies
+August 30, 1996 
+
+This directory contains a simple demo called "Sonar Bounce". 
+ 
+To get started quickly, plug the robot "Host" port into COM port 2 of
+your host computer and run "sobounce".  The robot should "zero" its
+steering and turret axes and begin to move about.  The sonar bounce
+program simply moves forward until an obstacle is sensed and turns
+until the obstacle is no longer in front and continues.
+   
+The contents of this directory are intended and compiled for Linux 
+machines communicating through the default COM serial port at 9600 baud.  
+Currently the default is COM port 2.  This can be changed by changing 
+DEFAULT_COMPORT in line 97 of Ndirect.c and recompiling -- or -- 
+by calling open_serial(NEW_COMPORT, 9600) in the client program immediately
+after calling connect_robot().  
+
+Ndirect.c:
+This is a general file that should be compiled and linked to 
+your client programs so that they can communicate with the 150.  
+
+sobounce.c:
+This is the source to sonar bounce. 
+
+

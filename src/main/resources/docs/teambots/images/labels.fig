@@ -1,0 +1,59 @@
+#FIG 3.1
+Portrait
+Flush left
+Inches
+1200 2
+6 375 1125 3075 3300
+4 0 -1 0 0 18 10 0.0000 4 120 915 375 1875 version 1.9b\001
+4 0 -1 0 0 18 10 0.0000 4 120 2670 375 2070 Software for multi-robot simulation\001
+4 0 -1 0 0 18 10 0.0000 4 120 2520 375 2265 and control.  Includes JavaSoccer.\001
+4 0 -1 0 0 18 10 0.0000 4 150 2370 375 3240 (c)1998 Tucker Balch and GTRC\001
+4 0 -1 0 0 18 10 0.0000 4 120 1860 375 2850 installation  instructions.\001
+4 0 -1 0 0 18 10 0.0000 4 120 2160 375 2655 See README file on disk  for\001
+4 0 -1 0 0 10 36 0.0000 4 435 2055 375 1530 JavaBots\001
+-6
+6 3750 1125 6450 3300
+4 0 -1 0 0 18 10 0.0000 4 120 915 3750 1875 version 1.9b\001
+4 0 -1 0 0 18 10 0.0000 4 120 2670 3750 2070 Software for multi-robot simulation\001
+4 0 -1 0 0 18 10 0.0000 4 120 2520 3750 2265 and control.  Includes JavaSoccer.\001
+4 0 -1 0 0 18 10 0.0000 4 150 2370 3750 3240 (c)1998 Tucker Balch and GTRC\001
+4 0 -1 0 0 18 10 0.0000 4 120 1860 3750 2850 installation  instructions.\001
+4 0 -1 0 0 18 10 0.0000 4 120 2160 3750 2655 See README file on disk  for\001
+4 0 -1 0 0 10 36 0.0000 4 435 2055 3750 1530 JavaBots\001
+-6
+6 7125 1125 9825 3300
+4 0 -1 0 0 18 10 0.0000 4 120 915 7125 1875 version 1.9b\001
+4 0 -1 0 0 18 10 0.0000 4 120 2670 7125 2070 Software for multi-robot simulation\001
+4 0 -1 0 0 18 10 0.0000 4 120 2520 7125 2265 and control.  Includes JavaSoccer.\001
+4 0 -1 0 0 18 10 0.0000 4 150 2370 7125 3240 (c)1998 Tucker Balch and GTRC\001
+4 0 -1 0 0 18 10 0.0000 4 120 1860 7125 2850 installation  instructions.\001
+4 0 -1 0 0 18 10 0.0000 4 120 2160 7125 2655 See README file on disk  for\001
+4 0 -1 0 0 10 36 0.0000 4 435 2055 7125 1530 JavaBots\001
+-6
+6 375 3600 3075 5775
+4 0 -1 0 0 18 10 0.0000 4 120 915 375 4350 version 1.9b\001
+4 0 -1 0 0 18 10 0.0000 4 120 2670 375 4545 Software for multi-robot simulation\001
+4 0 -1 0 0 18 10 0.0000 4 120 2520 375 4740 and control.  Includes JavaSoccer.\001
+4 0 -1 0 0 18 10 0.0000 4 150 2370 375 5715 (c)1998 Tucker Balch and GTRC\001
+4 0 -1 0 0 18 10 0.0000 4 120 1860 375 5325 installation  instructions.\001
+4 0 -1 0 0 18 10 0.0000 4 120 2160 375 5130 See README file on disk  for\001
+4 0 -1 0 0 10 36 0.0000 4 435 2055 375 4005 JavaBots\001
+-6
+6 3750 3600 6450 5775
+4 0 -1 0 0 18 10 0.0000 4 120 915 3750 4350 version 1.9b\001
+4 0 -1 0 0 18 10 0.0000 4 120 2670 3750 4545 Software for multi-robot simulation\001
+4 0 -1 0 0 18 10 0.0000 4 120 2520 3750 4740 and control.  Includes JavaSoccer.\001
+4 0 -1 0 0 18 10 0.0000 4 150 2370 3750 5715 (c)1998 Tucker Balch and GTRC\001
+4 0 -1 0 0 18 10 0.0000 4 120 1860 3750 5325 installation  instructions.\001
+4 0 -1 0 0 18 10 0.0000 4 120 2160 3750 5130 See README file on disk  for\001
+4 0 -1 0 0 10 36 0.0000 4 435 2055 3750 4005 JavaBots\001
+-6
+6 7125 3600 9825 5775
+4 0 -1 0 0 18 10 0.0000 4 120 915 7125 4350 version 1.9b\001
+4 0 -1 0 0 18 10 0.0000 4 120 2670 7125 4545 Software for multi-robot simulation\001
+4 0 -1 0 0 18 10 0.0000 4 120 2520 7125 4740 and control.  Includes JavaSoccer.\001
+4 0 -1 0 0 18 10 0.0000 4 150 2370 7125 5715 (c)1998 Tucker Balch and GTRC\001
+4 0 -1 0 0 18 10 0.0000 4 120 1860 7125 5325 installation  instructions.\001
+4 0 -1 0 0 18 10 0.0000 4 120 2160 7125 5130 See README file on disk  for\001
+4 0 -1 0 0 10 36 0.0000 4 435 2055 7125 4005 JavaBots\001
+-6

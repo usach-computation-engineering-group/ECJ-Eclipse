@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>
+TeamBots(tm) Release Notes
+</title>
+</head>
+<body BGCOLOR="#FFFFFF">
+
+<FONT FACE="ariel,helvetica">
+
+<h2>TeamBots<SUP><FONT SIZE=-3>TM</FONT></SUP> Revision History</h2>
+<UL>
+	TeamBots(tm) was formerly released as JavaBots.  Since that
+	time, the software hase been renamed.  The following is a 
+	synopsis of major changes between releases:
+	<UL>
+	<P>
+	<LI>14 April 00 <B>TeamBots 2.0e</B> 
+	<UL>
+		<LI> Change of directory structure, all code moved
+			into the "src" directory.
+		<LI> Addition of prioritized sweeping written by Will Uther.
+		<LI> Other bug fixes.
+	</UL>
+	<LI>25 July 98<B>JavaBots 1.9b</B> 
+	<LI>10 Feb 00 <B>TeamBots 2.0d</B> 
+	<UL>
+		<LI> Addition of Cye platform in simulation and hardware.
+		<LI> Changed the way time works: "time" and "maxtimestep"
+			statements in description files are deprecated.
+			Replaced by "timestep" command with fixed time
+			between steps.
+		<LI> Fixed bug in TBSim that caused EndTrial() to be called
+			at the wrong time.
+		<LI> Added walls, roads, polygonal obstacles and image backdrops.
+		<LI> Other bug fixes.
+	</UL>
+	<LI>25 July 98<B>JavaBots 1.9b</B> 
+	<UL>
+		<LI> Bug fixes.
+	</UL>
+	<LI>20 July 98<B>JavaBots 1.9a</B> 
+	<UL>
+		<LI> Added capability for soccer robots to 
+			detect scoring events (see SocballSim).
+		<LI> Bug fixes.
+	</UL>
+	<LI>6 APR 98 <B>JavaBots 1.9</B> 
+	<UL>
+		<LI> Now includes support for real TCP/IP communication
+			between robots.	 Implemented using a 
+			client/server approach. RoboComm is the server,
+			client is implemented in TransceiverHard.
+			The Transceiver interface also works in simulation.
+		<LI> Reworked much of the code in the abstractrobot
+			package.  This should be transparent to most
+			users.
+	</UL>
+	<LI>1 MAY 98 <B>JavaBots 1.8b</B> 
+	<UL>
+		<LI>Includes entire source tree.  Previous
+		releases did not include JavaBotSim.java and
+		a few others.
+		<LI>Distribution 1.8b includes a few additional
+		soccer teams in the JavaSoccer/teams directory.
+	</UL>
+	<LI>23 FEB 98 <B>JavaBots 1.7</B> 
+	<UL>
+		<LI> Added the JavaBotSimNoGraphics application.  It
+			allows you to run a simulation without the overhead
+			of graphics.  It's about ten times as fast as
+			with graphics.
+		<LI> Some incorrectly named methods, like "TakeStep()" were 
+			deprecated.  The first letter in these methods
+			should be lower case to conform to Java coding 
+			standards.  The old names still work, but you'll
+			get a "deprecated" warning when you compile.
+	</UL>
+	<LI>4 FEB 98 <B>JavaBots 1.6</B> 
+	<UL>
+		<LI> Added the ability to view robot ID numbers, robot
+			state and robot trails in JavaBotSim.
+			For example use of state, look at the
+			Forage and Pebbles demos. 
+		<LI> Implemented an inter-agent communication 
+			interface for SocSmall and MultiForageN150 robots.
+			For an example of robot-robot communication,
+			look at the CommTeam in JavaSoccer.
+			For a definition of the communication interface,
+			look at communication.Transceiver .
+		<LI> <B>IMPORTANT NOTE:</B> if you implemented your own
+			SimulatedObjects or simulated robots, you will
+			need to implement a few new methods described
+			in the SimulatedObject interface.  Robot
+			control systems are upwardly compatible.
+	</UL>
+	<LI>2 FEB 98 <B>JavaBots 1.5</B> 
+	<UL>
+		<LI> Fixed bug in JavaBotSim that sometimes caused objects to
+			be created twice.
+		<LI> Added feature that enables developers to extend
+			control systems and robots defined in the
+			abstractrobot package.  Previously, if they
+			wanted new functionality they had to
+			revise the existing classes.
+		<LI> Added a communication package that defines Messages and
+			a Communication interface for robot hardware.  
+			The next release
+			will include an implementation of communication
+			in most of the simulated robot types.
+		<LI> Created the JavaBots FAQ.
+	</UL>
+	<LI>29 OCT 97 <B>JavaBots 1.4</B> 
+	<UL>
+		<LI> Fixed problems that may have been causing
+			NoClassDefFoundError errors in JavaSoccer.  
+			We'll see...
+	</UL>
+	<LI>27 OCT 97 <B>JavaBots 1.3</B> 
+	<UL>
+		<LI>Added "maxtimestep" variable in description files.
+		This enables the user to limit how far forward the simulation
+		can go at each step.
+		<LI>Corrected comments in description file examples.
+		<LI>Cleaned up learning package.
+	</UL>
+	<LI>13 OCT 97 <B>JavaBots 1.2</B> 
+	<UL>
+		<LI>IS Robotics Pebbles simulation support.  To see this
+		capability demonstrated, go to the Pebbles directory and
+		type "demo".
+		<LI>Fixed problems folks were having with corrupted zip files.
+			This could have been caused either by an older
+			version of zip that we were using, or our
+			Apache web server.  We've addressed both.
+	</UL>
+	<LI>9 SEP 97 <B>JavaBots 1.1</B> 
+	<UL>
+		<LI>Simplified CLASSPATH, now
+		you only have to point to your java directory.
+		<LI>Improved the troubleshooting section of this page.
+	</UL>
+	<LI>20 AUG 97 <B>JavaBots 1.0</B> initial release.
+	</UL>
+</UL>
+</body>
+</html>

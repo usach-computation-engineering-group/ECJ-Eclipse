@@ -1,0 +1,26 @@
+# Copyright 2006 by Sean Luke and George Mason University
+# Licensed under the Academic Free License version 3.0
+# See the file "LICENSE" for more information
+
+parent.0 = ../multiobjective.params
+parent.1 = ../../simple/simple.params
+
+# Be sure to set the multiobjective fitness size as shown in ../multiobjective.params
+# Likewise note that ../multiobjective.params sets the statistics
+
+# the size of the elitist archive.  This must not be larger
+# than the subpopulation size, and it generally could be roughly
+# the size of the number of solutions you expect.  If your subpopulation
+# was 1024 in size, maybe this might be a reasonable value...
+#breed.elite.0 =			128
+
+# We also use a special version of MultiObjectiveFitness
+pop.subpop.0.species.fitness =				ec.multiobjective.spea2.SPEA2MultiObjectiveFitness
+
+# We have our own breeder
+breed =						ec.multiobjective.spea2.SPEA2Breeder
+
+### IMPORTANT NOTE: SPEA2 assumes that you're using tournament selection.
+# You could use another selection operator if you so chose, but it wouldn't
+# be the same as the standard SPEA2 algorithm
+

@@ -1,0 +1,19 @@
+Protocol string this code can read:
+
+$%02xG #%02xN:%02xC:%02xR:%02xA #%02xN:%02xC:%02xR:%02xA #%02xN:%02xC:%02xR:%02xA
+
+// read on 5 bigest in chans 0 and 1
+in tpuvis
+n
+0
+5
+0
+5
+0
+0
+
+to run tpuvis:
+cd arc/linuxbin
+arc
+reset box
+q 
